@@ -1,6 +1,6 @@
 # Real-Time Eye Strain Detection System
 
-A computer vision system that detects eye fatigue in real time using a webcam, MediaPipe facial landmarks, and machine learning — without any wearable sensors or special hardware.
+A computer vision system that detects eye fatigue in real time using a webcam, MediaPipe facial landmarks, and machine learning, without any wearable sensors or special hardware.
 
 ---
 
@@ -14,7 +14,7 @@ Prolonged screen use is one of the most common causes of eye strain, affecting s
 
 - Tracks eye openness every frame using **Eye Aspect Ratio (EAR)**
 - Detects blinks using a threshold + duration filter to avoid false positives
-- Extracts features every 60-second window — blink rate, EAR mean, EAR std, session time
+- Extracts features every 60-second window - blink rate, EAR mean, EAR std, session time
 - Classifies fatigue into 4 levels: **REST / LOW / MEDIUM / HIGH**
 - Displays live EAR, blink count, countdown timer, and prediction on screen
 - Logs labeled data to CSV for model training
@@ -91,7 +91,7 @@ python main.py
 |---|---|
 | `blink_rate` | Blinks per minute in the 60s window |
 | `ear_mean` | Average eye openness across the window |
-| `ear_std` | Variability in eye openness — lower std indicates fatigue |
+| `ear_std` | Variability in eye openness(lower std indicates fatigue) |
 | `session_time` | Total elapsed time since session started |
 
 ---
